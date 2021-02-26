@@ -6,9 +6,13 @@
     <h1>Invalid username or password</h1>
 {% endif %}
 
-<form action="login_user" method="post"> {% csrf_token %}
+<form action="login_user/" style="margin-left: 40px;" method="post"> {% csrf_token %}
+    <label style="font-size: medium; color:black"> <b>Name:</b></label>
     <input type="text" id="username" name="username" placeholder="username">
+    <br><br>
+    <label style="font-size: medium; color:black"> <b>Password:</b></label>
     <input type="password" id="password" name="password" placeholder="password">
+    <br><br>
     <input type="submit" value="Login">
 
 </form>
